@@ -25,7 +25,7 @@ PiAPI's unofficial [Dream Machine API](https://piapi.ai/dream-machine-api), laun
 <h3>Pay-as-you-go Option</h3>
 
 <p>
-  To get started, simply sign up and purchase credits in our Workspace. Once done, you can immediately access our API! Our service leverages PiAPI’s Dream Machine account pools, ensuring seamless operation without any hassle on your part.
+  To get started, simply sign up and purchase credits in our <a href="https://app.piapi.ai/">Workspace</a>. Once done, you can immediately access our API! Our service leverages PiAPI’s Dream Machine account pools, ensuring seamless operation without any hassle on your part.
 </p>
 
 <ul>
@@ -45,7 +45,7 @@ PiAPI's unofficial [Dream Machine API](https://piapi.ai/dream-machine-api), laun
 
 <ul>
   <li>Faster generation time</li>
-  <li>No need to host your own Dream Machine account</li>
+  <li>Supports hosting of multiple accounts</li>
   <li>Stable API service</li>
 </ul>
 
