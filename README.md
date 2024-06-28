@@ -9,13 +9,13 @@ PiAPI's unofficial [Dream Machine API](https://piapi.ai/dream-machine-api), laun
 <ol>
   <li>Image Upload Supported</li>
   <li>Enhance Prompt Feature Supported</li>
-  <li>Extend Function Coming Soon</li>
   <li>Bulk Generation Available</li>
   <li>Pay-as-you-go and Host-your-account Options</li>
   <li>Asynchronous API Calls</li>
   <li>Watermark Removal</li>
   <li>Priority Generations</li>
   <li>Commerical Use</li>
+  <li>Extend Function Coming Soon</li>
 </ol>
 
 <br><br>
@@ -63,7 +63,7 @@ PiAPI's unofficial [Dream Machine API](https://piapi.ai/dream-machine-api), laun
 <h4>Host-your-account Option</h4>
 
 <ul>
-  <li>$<b>10</b>/seat/month</li>
+  <li>Flat pricing: $<b>10</b>/seat/month</li>
 </ul>
 
 <br>
@@ -71,6 +71,53 @@ PiAPI's unofficial [Dream Machine API](https://piapi.ai/dream-machine-api), laun
 Please refer to our <a href="https://piapi.ai/pricing">pricing page</a> for more information.
 
 <br><br>
+
+<h2>Usage Steps</h2>
+<h3>Pay-as-you-go Option</h3>
+<ul>
+  <li>Register for PiAPI's Workspace using your GitHub account.</li>
+  <li>Obtain your API KEY from our <a href="https://app.piapi.ai/">Workspace</a></li>
+  <li>Start coding right away!</li>
+</ul>
+<br>
+<h4>Sample API Calls (using cURL)</h4>
+<br>
+<p>Create a Video Generation call</p>
+
+```
+curl --request POST \
+  --url https://api.piapi.ai/api/luma/v1/video \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --header 'X-API-Key: ' \
+  --data '{
+  "prompt": "flying cat",
+  "expand_prompt": true
+}'
+```
+<p>Response</p>
+
+```
+{
+  "code": 200,
+  "data": {
+    "task_id": "record_this_taskID"
+  },
+  "message": "success"
+}
+```
+<br>
+<p>Get the Video Generation call</p>
+
+```
+url --request GET \
+  --url https://api.piapi.ai/api/luma/v1/video/task_id \   //Replace the task_id with the returned task_id
+  --header 'Accept: application/json'
+```
+<br>
+<p>Response - Check out our <a href="https://piapi.ai/docs/dream-machine/get-video">documentation</a> for more information!</p>
+<br>
+<br>
 
 <h2>Contact us</h2>
 
